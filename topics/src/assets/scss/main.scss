@@ -1,0 +1,73 @@
+$text-color:gray;
+$text-active: #e60000;
+
+html *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+[v-cloak]{
+    display:none
+}
+
+
+#app {
+  width: 450px;
+  margin: 0 auto;
+
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.header{
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: $text-color;
+
+    .najcitanejsie{
+      text-transform: uppercase;
+      color: $text-active;
+      letter-spacing: -1.5px;
+    }
+
+  .nav {
+
+    a {
+      color: $text-color;
+      text-decoration: none;
+
+
+      &.router-link-exact-active {
+        color: $text-active;
+      }
+    }
+}
+}
+
+.home{
+    .olList{
+        font-weight: 700;
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+        color: rgb(0, 0, 0);
+
+        .listText{
+            padding-left: 1rem;
+            font-weight: 500;
+            color: rgb(31, 31, 31);
+        }
+
+        .li{
+            margin: 1.5rem 0 1.5rem 1.5rem;
+        }
+
+    }
+}
+
+
